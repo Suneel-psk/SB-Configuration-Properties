@@ -9,8 +9,8 @@ spring:
     url: jdbc:oracle:thin:@localhost:1521:xe
   jpa:
     hibernate:
-      ddl-auto: update
-      show-sql: true
+      ddl-auto: validate 
+      show-sql: true 
   management:
     endpoints:
       web:
@@ -18,8 +18,10 @@ spring:
           include: '*'
 server:
   port: 9090
-
-     
-   
-   
-
+# Application Messages Goes Here
+auth-service:
+  messages:
+    userReg: User Created
+    userRegErr: User Creation Failed
+    login: Login Success
+    loginErr: Invalid Credentials 
