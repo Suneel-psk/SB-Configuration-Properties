@@ -1,14 +1,24 @@
 spring:
-  datasource:
+  boot:
+    admin:
+       client:
+           url: http://localhost:1111/
+ datasource:
       username: suneel
       password: welcome
       url: jdbc:oracle:thin:@localhost:1521:xe
-  jpa:
+ jpa:
     hibernate:
       ddl-auto: update
       show-sql: true
+ management:
+     endpoints:
+       web:
+         exposure:
+           include: '*'
 server:
   port: 9090
      
+   
    
 
