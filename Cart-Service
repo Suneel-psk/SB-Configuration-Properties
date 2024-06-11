@@ -17,7 +17,7 @@ spring:
         exposure:
           include: '*'
 server:
-  port: 9093
+  port: 9092
 # Application Messages Goes Here
 product-service:
   messages:
