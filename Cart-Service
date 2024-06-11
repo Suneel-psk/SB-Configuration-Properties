@@ -28,4 +28,4 @@ product-service:
     cartSelect: Cart Retrieved Successfully
     cartSelectErr: Failed to fetch the cart
     deleteCart: Cart Deleted Successfully
-    deleteCart: Failed to delete Cart
+    deleteCartErr: Failed to delete Cart
