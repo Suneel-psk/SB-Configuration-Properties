@@ -19,7 +19,7 @@ spring:
 server:
   port: 9092
 # Application Messages Goes Here
-product-service:
+cart-service:
   messages:
     cartAdded: Added To Cart Successfully
     cartAddedErr: Failed to Add Cart
