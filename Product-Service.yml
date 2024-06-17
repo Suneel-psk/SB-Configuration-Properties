@@ -11,13 +11,17 @@ spring:
     hibernate:
       ddl-auto: validate 
       show-sql: true 
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: '*'
+      database-platform: org.hibernate.dialect.Oracle19cDialect
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
 server:
   port: 9091
+
 # Application Messages Goes Here
 product-service:
   messages:
@@ -25,7 +29,7 @@ product-service:
     categoryAddErr: Failed to add category
     categoryUpdate: Category Updated Successfully
     categoryUpdateErr: Failed to update category
-    categoryFetch: All categorys fetched successfully
+    categoryFetch: All categories fetched successfully
     categoryFetchErr: Failed to fetch all categories
     categorySelect: Category Retrieved Successfully
     categorySelectErr: Failed to retrieve category
@@ -34,7 +38,7 @@ product-service:
     productAdded: Product Added Successfully
     productAddedErr: Failed to add product
     productUpdate: Product Updated Successfully
-    productUpdateErr: Failed to update category
+    productUpdateErr: Failed to update product
     productFetch: All Products fetched successfully
     productFetchErr: Failed to fetch all products
     productSelect: Product Retrieved Successfully
