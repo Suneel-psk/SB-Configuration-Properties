@@ -19,7 +19,7 @@ spring:
 server:
   port: 9093
 # Application Messages Goes Here
-product-service:
+orders-service:
   messages:
     addOrders: Orders Added Successfully
     addOrdersErr: Failed to add orders
